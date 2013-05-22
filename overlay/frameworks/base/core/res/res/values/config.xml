@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- This device does not allow sms service. -->
+    <bool name="config_sms_capable">false</bool>
+
+</resources>
