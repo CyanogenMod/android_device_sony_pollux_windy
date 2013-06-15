@@ -21,4 +21,5 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
 
-$(call inherit-product-if-exists, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
+# Include non-opensource parts
+$(call inherit-product, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
