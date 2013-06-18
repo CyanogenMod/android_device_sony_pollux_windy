@@ -11,6 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.carrier=wifi-only
 
 # Inherit the pollux-common definitions
 $(call inherit-product, device/sony/pollux-common/pollux-common.mk)
