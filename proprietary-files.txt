@@ -18,6 +18,7 @@ bin/thermald
 bin/updatemiscta
 bin/usbhub
 bin/usbhub_init
+bin/irsc_util
 etc/firmware/acdb.mbn
 etc/firmware/apps.mbn
 etc/firmware/dsp3.mbn
