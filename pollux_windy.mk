@@ -23,5 +23,9 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
 
+# Device specific sysmon_monitor conf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
+
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
