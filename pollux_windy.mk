@@ -27,5 +27,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
 
+# irsc_util config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config
+
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
