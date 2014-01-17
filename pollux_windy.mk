@@ -25,7 +25,8 @@ PRODUCT_COPY_FILES += \
 
 # Device specific sysmon_monitor conf
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
+    $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg \
+    $(LOCAL_PATH)/rootdir/system/etc/sec_conf:system/etc/sec_conf
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
