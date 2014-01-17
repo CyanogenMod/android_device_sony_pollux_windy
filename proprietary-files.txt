@@ -68,7 +68,6 @@ etc/firmware/tzsuntory.b02
 etc/firmware/tzsuntory.b03
 etc/firmware/tzsuntory.mdt
 etc/flashled_calc_parameters.cfg
-etc/sec_config
 lib/hw/camera.qcom.so:lib/hw/vendor-camera.qcom.so
 lib/hw/gps.default.so
 lib/hw/lights.default.so:lib/hw/vendor-lights.default.so
