@@ -7,7 +7,6 @@ bin/fm_qsoc_patches
 bin/fmconfig
 bin/hci_qcomm_init
 bin/illumination_service
-bin/irsc_util
 bin/mpdecision
 bin/qmuxd
 bin/qseecomd
@@ -20,6 +19,7 @@ bin/thermald
 bin/updatemiscta
 bin/usbhub
 bin/usbhub_init
+bin/irsc_util
 etc/firmware/acdb.mbn
 etc/firmware/apps.mbn
 etc/firmware/dsp3.mbn
@@ -68,7 +68,6 @@ etc/firmware/tzsuntory.b02
 etc/firmware/tzsuntory.b03
 etc/firmware/tzsuntory.mdt
 etc/flashled_calc_parameters.cfg
-etc/sec_config
 lib/hw/camera.qcom.so:lib/hw/vendor-camera.qcom.so
 lib/hw/gps.default.so
 lib/hw/lights.default.so:lib/hw/vendor-lights.default.so
