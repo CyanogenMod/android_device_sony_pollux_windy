@@ -42,4 +42,4 @@ PRODUCT_NAME := full_pollux_windy
 PRODUCT_DEVICE := pollux_windy
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := SGP311
+PRODUCT_MODEL := Xperia Tablet Z Wi-Fi
