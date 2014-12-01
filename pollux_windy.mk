@@ -19,9 +19,9 @@ $(call inherit-product, device/sony/pollux-common/pollux-common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 
-# Device specific part for two-stage boot
+# Device specific sysmon_monitor conf
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
+    $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
 
 # irsc_util config
 PRODUCT_COPY_FILES += \
