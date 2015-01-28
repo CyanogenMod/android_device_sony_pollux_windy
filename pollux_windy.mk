@@ -19,6 +19,10 @@ $(call inherit-product, device/sony/pollux-common/pollux-common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 
+# Device specific init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
+
 # Device specific sysmon_monitor conf
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/sysmon.cfg:system/etc/sysmon.cfg
