@@ -1,4 +1,5 @@
 bin/irsc_util
+bin/rmt_storage
 etc/firmware/apps.mbn
 etc/firmware/dsp3.mbn
 etc/firmware/dsps.b00
