@@ -22,8 +22,10 @@
 #
 #
 
+# Boot animation
 TARGET_SCREEN_HEIGHT := 1200
 TARGET_SCREEN_WIDTH := 1920
+TARGET_BOOTANIMATION_HALF_RES := true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
