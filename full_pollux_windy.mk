@@ -30,9 +30,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
- 
-# Common Sony Resources
-$(call inherit-product, device/sony/common/resources.mk)
 
 # Inherit from pollux_windy device
 $(call inherit-product, device/sony/pollux_windy/pollux_windy.mk)
