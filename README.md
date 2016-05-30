@@ -1,2 +1,2 @@
-android_device_sony_pollux_windy
-================================
+Xperia Tablet Z Wi-Fi - CyanogenMod 13.0
+========================================

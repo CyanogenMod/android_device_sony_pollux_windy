@@ -1,4 +1,4 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2013-2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,20 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-BOARD_HAVE_RADIO := false
-
-# Inherit the pollux-common definitions
-$(call inherit-product, device/sony/pollux-common/pollux-common.mk)
-
+# Device specific overlays
 DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 
-# Device specific init
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
+# Device product elements
+include $(LOCAL_PATH)/product/*.mk
 
-# irsc_util config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config
+# Product common configurations
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Include non-opensource parts
+# Pollux-common definitions
+$(call inherit-product, device/sony/pollux-common/pollux-common.mk)
+
+# Vendor product configurations
 $(call inherit-product, vendor/sony/pollux_windy/pollux_windy-vendor.mk)
